@@ -492,6 +492,8 @@ blockquote footer { background-color: #fff; border-color: transparent; color: #7
 
 .related-post-title { border-bottom: thin solid #f3f3f3; }
 
+.posts a { text-decoration: none; background-image: none; }
+
 @media screen and (min-width: 32em) { html { font-size: 17px; }
   h1, .h1 { font-size: 2.998rem; }
   .site-header { text-align: left; }

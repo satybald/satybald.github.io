@@ -6,7 +6,10 @@ comments: true
 categories: scala
 ---
 	
-Scala has a notable adoption in the industry, especially in Big Data community. However, given the richness of functionality, it takes a time to grasp and master language concept. When you're a beginner you have a challenge from where to start a study journey. Given the vast amount of literature about Scala and video resources, it might present a problem for a new commer. Below a list of a best resource from my opinion to start, if I were in the past just starting learning Scala. Please note that you still need to put a considerable effort to master a language and put "10,000 hours" effort. This, not a shortcut, it just that makes a path easier.
+Scala has a notable adoption in the industry, especially in Big Data community. However, given the richness of functionality, it takes a time to grasp and master language concept. When you're a beginner you have a challenge from where to start a study journey. Given the vast amount of literature about Scala and video resources, it might present a problem for a new commer. 
+
+
+Below a list of a best resource from my opinion to start, if I were in the past just starting learning Scala. Please note this is not a shortcut, or 24 hour book series, you still need to put a considerable effort to master a language and put "10,000 hours" effort.
 
 
 * [scala-exercises.org][scala-exercises.org]. As I'm a big fun of learning by doing concept, this site an excellent opportunity to learn scala by doing interactive exercises. What I really like about the exercises, they not only covering basic Scala, but has a variety of exercises to learn about Scala libraries and frameworks.
