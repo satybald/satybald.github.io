@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>A Game plan for learning Scala. Notes of Present Me to Past Me &#8211; Progammer Life</title>
+    <link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com">
+    <link rel="dns-prefetch" href="//cdn.mathjax.org">
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This is a place where Sayat shares his learnings">
+    <meta name="robots" content="all">
+    <meta name="author" content="Sayat Satybaldiyev">
+    <meta name="keywords" content="scala">
+    <link rel="canonical" href="http://localhost:4000/scala/2017/07/29/learning-scala-notes-of-present-me-to-past-me/">
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed for Progammer Life" href="/feed.xml" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/main.css?201707300959" type="text/css">
+
+    <!-- Fonts -->
+    
+    <link href='//fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Lato:900,300' rel='stylesheet' type='text/css'>
+    
+    
+      <link href="//maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    
+
+    <!-- MathJax -->
+    
+
+    <!-- Verifications -->
+    
+    
+
+    <!-- Open Graph -->
+    <!-- From: https://github.com/mmistakes/hpstr-jekyll-theme/blob/master/_includes/head.html -->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="A Game plan for learning Scala. Notes of Present Me to Past Me">
+    <meta property="og:description" content="This is a place where Sayat shares his learnings">
+    <meta property="og:url" content="http://localhost:4000/scala/2017/07/29/learning-scala-notes-of-present-me-to-past-me/">
+    <meta property="og:site_name" content="Progammer Life">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    
+        <meta name="twitter:site" content="@Sayat_Stb" />
+    
+    <meta name="twitter:title" content="A Game plan for learning Scala. Notes of Present Me to Past Me" />
+    <meta name="twitter:description" content="This is a place where Sayat shares his learnings" />
+    <meta name="twitter:url" content="http://localhost:4000/scala/2017/07/29/learning-scala-notes-of-present-me-to-past-me/" />
+
+    <!-- Icons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/favicon-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+
+    
+    <script type="text/javascript">
+       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+       ga('create', 'UA-44204508-1', 'auto');
+       ga('send', 'pageview');
+    </script>
+    
+</head>
+
+<body class="site animated fade-in-down">
+  
+	
+
+  <div class="site-wrap">
+    <header class="site-header px2 px-responsive">
+  <div class="mt2 wrap">
+    <div class="measure">
+      <a href="http://localhost:4000" class="site-title">Progammer Life</a>
+      <nav class="site-nav">
+        
+    
+
+    
+        <a href="/about-me/"></a>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+      </nav>
+      <div class="clearfix"></div>
+      
+        <div class="social-icons">
+  <div class="social-icons-right">
+    
+      <a class="fa fa-github" href="https://github.com/satybald"></a>
+    
+    
+    
+      <a class="fa fa-stack-overflow" href="https://stackoverflow.com/users/2586315"></a>
+    
+    <a class="fa fa-rss" href="/feed.xml"></a>
+    
+      <a class="fa fa-twitter" href="https://twitter.com/Sayat_Stb"></a>
+    
+    
+    
+    
+    
+      <a class="fa fa-envelope" href="mailto:stb@satybald.com"></a>
+    
+    
+    
+    
+  </div>
+  <div class="right">
+    
+    
+    
+  </div>
+</div>
+<div class="clearfix"></div>
+
+      
+    </div>
+  </div>
+</header>
+
+
+    <div class="post p2 p-responsive wrap" role="main">
+      <div class="measure">
+        
+
+
+<div class="post-header mb2">
+  <h1>A Game plan for learning Scala. Notes of Present Me to Past Me</h1>
+  <span class="post-meta">Jul 29, 2017</span><br>
+  
+  <span class="post-meta small">
+  
+    2 minute read
+  
+  </span>
+</div>
+
+<article class="post-content">
+  <p>Scala has a notable adoption in the industry, especially in Big Data community. However, given the richness of functionality, it takes a time to grasp and master language concept. When you’re a beginner you have a challenge from where to start a study journey. Given the vast amount of literature about Scala and video resources, it might present a problem for a new commer. Below a list of a best resource from my opinion to start, if I were in the past just starting learning Scala. Please note that you still need to put a considerable effort to master a language and put “10,000 hours” effort. This, not a shortcut, it just that makes a path easier.</p>
+
+<ul>
+  <li>
+    <p><a href="http://scala-exercises.org">scala-exercises.org</a>. As I’m a big fun of learning by doing concept, this site an excellent opportunity to learn scala by doing interactive exercises. What I really like about the exercises, they not only covering basic Scala, but has a variety of exercises to learn about Scala libraries and frameworks.</p>
+  </li>
+  <li>
+    <p><a href="http://danielwestheide.com/scala/neophytes.html">The Neophyte’s Guide to Scala</a>. This another excellent starting point. It was born out of Marting Oderski class, which I will be covering later. It provides a decent explanation about most language features with examples.</p>
+  </li>
+  <li>
+    <p><a href="https://github.com/alexandru/scala-best-practices">Scala best practices</a> and <a href="http://docs.scala-lang.org/style/">style guide</a>. As you can implement the same functionality in many ways, it’s better to read about common standards and adopted practices from the community.</p>
+  </li>
+  <li>
+    <p>Last but not least, <a href="https://www.coursera.org/learn/progfun1">Martin Oderski Functional Programming Principles in Scala</a> and whole <a href="https://www.coursera.org/specializations/scala">Scala specialization at coursera</a>. This an excellent course, I actually started my journey from it. However, the only thing that I complain, it takes time to watch video lessons, and sometimes Martin Oderski explains features in highly academic manner. I recommend to take the course, but after one done scala tutorials in scala-exercises and few chapters from Neophyte’s Guide to scala. The course has great and interesting exercises to solve. As a bonus feature, you even get a cool and nice looking certificate of accomplishment.</p>
+  </li>
+</ul>
+
+<h3 id="is-that-all-would-i-be-a-scala-ninja-in-the-end">Is that all? Would I be a Scala ninja in the end?</h3>
+<p>Not yet, by the end of the learning journey, you would have knowledge of language constructs. The one needs to master common language libraries and frameworks for projects. But this a whole different story. What you need to remember practice makes perfect. Start your own side project, a project at work, or contribute small features to OSS Scala projects.</p>
+
+
+</article>
+
+
+  <div class="share-page">
+  
+
+  <div class="share-links">
+    
+      <a class="fa fa-facebook" href="https://facebook.com/sharer.php?u=http://localhost:4000/scala/2017/07/29/learning-scala-notes-of-present-me-to-past-me/" rel="nofollow" target="_blank" title=""></a>
+    
+
+    
+      <a class="fa fa-twitter" href="https://twitter.com/intent/tweet?text=A Game plan for learning Scala. Notes of Present Me to Past Me&url=http://localhost:4000/scala/2017/07/29/learning-scala-notes-of-present-me-to-past-me/" rel="nofollow" target="_blank" title=""></a>
+    
+
+    
+      <a class="fa fa-google-plus" href="https://plus.google.com/share?url=http://localhost:4000/scala/2017/07/29/learning-scala-notes-of-present-me-to-past-me/" rel="nofollow" target="_blank" title=""></a>
+    
+
+    
+      <a class="fa fa-linkedin" href="http://www.linkedin.com/shareArticle?url=http://localhost:4000/scala/2017/07/29/learning-scala-notes-of-present-me-to-past-me/&title=A Game plan for learning Scala. Notes of Present Me to Past Me" rel="nofollow" target="_blank" title=""></a>
+    
+
+    
+
+    
+
+    
+      <a class="fa fa-reddit" href="http://reddit.com/submit?url=http://localhost:4000/scala/2017/07/29/learning-scala-notes-of-present-me-to-past-me/&title=A Game plan for learning Scala. Notes of Present Me to Past Me" rel="nofollow" target="_blank" title=""></a>
+    
+
+    
+
+    
+  </div>
+</div>
+
+
+
+
+
+
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_shortname  = 'sayatez';
+    var disqus_identifier = '/scala/2017/07/29/learning-scala-notes-of-present-me-to-past-me';
+    var disqus_title      = 'A Game plan for learning Scala. Notes of Present Me to Past Me';
+
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+
+  <h3 class="related-post-title">Related Posts</h3>
+  
+
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="center">
+  <div class="measure">
+    <small>
+      This is a place where Sayat shares his learnings
+    </small>
+  </div>
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Progammer Life</title>
+    <description>This is a place where Sayat shares his learnings</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    
+      <item>
+        <title>A Game plan for learning Scala. Notes of Present Me to Past Me</title>
+        <description>&lt;p&gt;Scala has a notable adoption in the industry, especially in Big Data community. However, given the richness of functionality, it takes a time to grasp and master language concept. When you’re a beginner you have a challenge from where to start a study journey. Given the vast amount of literature about Scala and video resources, it might present a problem for a new commer. Below a list of a best resource from my opinion to start, if I were in the past just starting learning Scala. Please note that you still need to put a considerable effort to master a language and put “10,000 hours” effort. This, not a shortcut, it just that makes a path easier.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://scala-exercises.org&quot;&gt;scala-exercises.org&lt;/a&gt;. As I’m a big fun of learning by doing concept, this site an excellent opportunity to learn scala by doing interactive exercises. What I really like about the exercises, they not only covering basic Scala, but has a variety of exercises to learn about Scala libraries and frameworks.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://danielwestheide.com/scala/neophytes.html&quot;&gt;The Neophyte’s Guide to Scala&lt;/a&gt;. This another excellent starting point. It was born out of Marting Oderski class, which I will be covering later. It provides a decent explanation about most language features with examples.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/alexandru/scala-best-practices&quot;&gt;Scala best practices&lt;/a&gt; and &lt;a href=&quot;http://docs.scala-lang.org/style/&quot;&gt;style guide&lt;/a&gt;. As you can implement the same functionality in many ways, it’s better to read about common standards and adopted practices from the community.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Last but not least, &lt;a href=&quot;https://www.coursera.org/learn/progfun1&quot;&gt;Martin Oderski Functional Programming Principles in Scala&lt;/a&gt; and whole &lt;a href=&quot;https://www.coursera.org/specializations/scala&quot;&gt;Scala specialization at coursera&lt;/a&gt;. This an excellent course, I actually started my journey from it. However, the only thing that I complain, it takes time to watch video lessons, and sometimes Martin Oderski explains features in highly academic manner. I recommend to take the course, but after one done scala tutorials in scala-exercises and few chapters from Neophyte’s Guide to scala. The course has great and interesting exercises to solve. As a bonus feature, you even get a cool and nice looking certificate of accomplishment.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;is-that-all-would-i-be-a-scala-ninja-in-the-end&quot;&gt;Is that all? Would I be a Scala ninja in the end?&lt;/h3&gt;
+&lt;p&gt;Not yet, by the end of the learning journey, you would have knowledge of language constructs. The one needs to master common language libraries and frameworks for projects. But this a whole different story. What you need to remember practice makes perfect. Start your own side project, a project at work, or contribute small features to OSS Scala projects.&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 29 Jul 2017 09:00:00 +0000</pubDate>
+        <link>http://localhost:4000/scala/2017/07/29/learning-scala-notes-of-present-me-to-past-me/</link>
+        <guid isPermaLink="true">http://localhost:4000/scala/2017/07/29/learning-scala-notes-of-present-me-to-past-me/</guid>
+      </item>
+    
+  </channel>
+</rss>
