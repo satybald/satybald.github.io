@@ -1,7 +1,7 @@
 ---
 layout: page
 title:
-permalink: /about-me/
+permalink: /about/
 tags: about
 ---
 
