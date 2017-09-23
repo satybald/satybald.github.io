@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "A Game plan for learning Scala. Notes of Present Me to Past Me"
+date:   2017-07-29 09:00:00
+comments: true
+categories: scala
+---
+Presto on Kuberntests
+
+Why Kuberenetes?
+
+What's is it?
+
+What problems can be solved?
+

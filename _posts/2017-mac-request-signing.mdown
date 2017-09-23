@@ -1,0 +1,10 @@
+---
+layout: post
+title:  "A Game plan for learning Scala. Notes of Present Me to Past Me"
+date:   2017-07-29 09:00:00
+comments: true
+categories: scala
+---
+Have you wonder how auth works in AWS?
+
+Message Auhtenticated Codes
