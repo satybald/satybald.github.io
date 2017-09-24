@@ -1,0 +1,44 @@
+---
+layout: post
+title:  "Prestodb vs Impala Comparision"
+date:   2017-07-29 09:00:00
+comments: true
+categories: prestodb, impala
+---
+
+In the modern "era" of Big Data Spark, Impala, Hive and PrestoDB project are quite common technologies. However, Impala and PrestoDB are two similar projects as they both serve as SQL engines. The aim of the project is to provide separation between storage and compute. Unlike most of tradinional RDBs have coupled two components together you can now have very easlity horizontal scalable system when required. Both of the project was born out o slow and inefficient Map Reduce model on Hadoop. Having used both of I have decided to make "theoretical" comparision of their architechure of this both system. I am staying away doing real benchmark for now as they quite tricky to implement correctly, plus time consuming.
+
+*Impala*
+
+Pros:
+
+* Speed. C++/LLVM backend for queries. The team has a clear focus on low-level performance. Looks like that Cloudera sees this as a marketing advantage and able to hire such engineers. In Cloudera's benchmarks, Impala outperforms Presto on with 5.3x to 7.5x fold speedup for a single query. For 10 concurrent users interactive queries speed up is roughly 20x. [1]
+* Cluster-wide metadata. The team found that doing a synchronous RPC call to external metadata service for an each single query introduces substantial TCP latency overhead. Impala has catalogd and statestored services to disseminate metadata changes to the coordinator nodes, instead of coordinator pulling it. [1]
+* Query manager. Impala has its own query build from scratch scheduler. YARN is too slow for Impala. [1]
+* Symmetric-node architecture. Each node can act as a query coordinator and a worker: better fault tolerance, load-balancing. [1]
+* Comunity(Subjective, thought). It's an Apache incubating project. Impala version 2.XX vs presto 0.17X.
+* S3 integration.
+
+
+On Par:
+* Both of this project are not design for long term running ETL jobs and SQL queries. Being in memory have a significat performance gain, but also limitation that data should fit in the RAM. Impala demon is still not able to finish query if it's too big. At the same time, Presto has already merged disk splitting feature. 
+
+
+Cons:
+* Impala Primary designed for Hadoop analytics. It has a native support for HDFS, YARN, HBase. Even though, it has S3 integration it is added to support HDFS use case(hot data in HDFS, cold data in S3). [1] For efficient I/O it's using a bunch of HDFS specific optimizations.
+* Impala has higher hardware requirements. 128GB of RAM, recommended: 256GB versus presto 64GB.
+
+Conclusion:
+At the end of the day, Presto and Impala have similar architectures. They're both designed for interactive analysis, both have a weakness for a long-running batch processing analytics. Presto has a killer feature that it is designed for heterogeneous data sources, which better suites "polyglot persistence architechure". Presto has a wider number of connectors: S3, Cassandra, Postgres, Kafka etc versus Impala: HDFS, S3 and HBase only.
+
+Even thought, raw performance always matters, I have an impression that we're not fully utilizing/understanding Presto capabilities at this moment. Also, we're not enabling performance enhancements for Presto- binary columnar storage, and automatic metadata and statistics collection.    
+
+
+
+Resources:
+1. Impala Paper. http://cidrdb.org/cidr2015/Papers/CIDR15_Paper28.pdf
+2. Impala installation. https://www.cloudera.com/documentation/enterprise/5-9-x/topics/impala_install.html#install
+3. Prestodb Connectors https://prestodb.io/docs/current/connector.html
+
+https://www.infoworld.com/article/3131058/analytics/big-data-face-off-spark-vs-impala-vs-hive-vs-presto.html
+https://hortonworks.com/blog/impala-vs-hive-performance-benchmark/

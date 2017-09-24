@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "A Game plan for learning Scala. Notes of Present Me to Past Me"
+title:  "Presto in K8s"
 date:   2017-07-29 09:00:00
 comments: true
-categories: scala
+categories: kubernetes, k8s, prestodb
 ---
 Presto on Kuberntests
 

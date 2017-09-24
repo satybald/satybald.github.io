@@ -1,0 +1,8 @@
+Spark RPC:
+
+https://github.com/apache/spark/pull/9210
+
+Client mode means RPC won't listen for incoming connections. This allow executor to act like a pure clients when using netty based RPC backend, reducing the number of needed sockets and open ports.
+
+Client Mode = is this an executor or the driver?
+What is executor, and what's a driver?
